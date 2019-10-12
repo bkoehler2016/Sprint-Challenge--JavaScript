@@ -128,7 +128,7 @@ graduates.forEach(function (item) {
   universities.push(item.university);
   universities.sort();
 });
-console.log(universities);
+console.log(JSON.stringify(universities, null, 2));
 
 /* Request 2: Create a new array called contactInfo that contains both first name and email of each student. This will be an array of strings.
 
@@ -140,7 +140,7 @@ const contactInfo = [];
 graduates.forEach(item => {
   contactInfo.push(`${item.first_name} ${item.email}`);
 });
-console.log(contactInfo);
+console.log(JSON.stringify(contactInfo, null, 2));
 
 /* Request 3: Find out how many universities have the string "Uni" included in their name. Create a new array called unisWithUni that contains them all. This will be an array of objects. Log the result. */
 const unisWithUni = [];
@@ -149,7 +149,7 @@ graduates.filter(item => {
     unisWithUni.push(item.university);
   }
 });
-console.log(unisWithUni);
+console.log(JSON.stringify(unisWithUni, null, 2));
 
 
 // ==== ADVANCED Array Methods ====
@@ -229,7 +229,7 @@ zooAnimals.forEach(item => {
 });
 displayNames.sort();
 
-console.log(displayNames);
+console.log(JSON.stringify(displayNames, null, 2));
 
 /* Request 2: .map()
 
@@ -241,7 +241,7 @@ zooAnimals.map(item => {
   lowCaseAnimalNames.push(item.animal_name.toLowerCase());
 });
 
-console.log(lowCaseAnimalNames);
+console.log(JSON.stringify(lowCaseAnimalNames, null, 2));
 
 
 /* Request 3: .filter() 
